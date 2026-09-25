@@ -9,16 +9,17 @@ ROCK, DARK, PAD = '#3A2222', '#26151D', '#40293A'
 LAVA, YEL = '#FF5A0A', '#FFF000'
 
 # feet with glowing lava soles, cracked legs
-for f in BOTH:
-    s.box(f(362), 890, f(512), 962, -70, 92, '#0C0A0C').f(R(f(362), 936, f(512), 962), '#FF2A0A')
-    s.box(f(362), 796, f(512), 896, -70, 70, DARK).f(B((f(432), 872), (f(448), 814), 11), LAVA)
+for (x0, x1), crack in (((357, 504), ((445, 800), (418, 868))), ((516, 662), ((575, 806), (598, 873)))):
+    s.box(x0, 890, x1, 962, -70, 92, '#0C0A0C').f(R(x0, 936, x1, 962), '#FF2A0A')
+    s.box(x0, 796, x1, 896, -70, 70, DARK).f(B(crack[0], crack[1], 11), LAVA)
 
 # torso with lava cracks and a yellow core gem, hips
 torso = s.box(341, 536, M(341), 724, -100, 100, ROCK)
-for a, b in (((455, 572), (428, 632)), ((583, 586), (610, 650)), ((458, 690), (484, 724))):
+for a, b in (((457, 563), (422, 625)), ((578, 576), (615, 643)), ((455, 683), (466, 724)), ((595, 693), (583, 724))):
     torso.f(B(a, b, 11), LAVA)
 gem(s, 522, 632, 56, 98, 116, YEL)
-s.box(341, 718, M(341), 802, -96, 96, DARK).f(B((M(458), 718), (M(484), 760), 11), LAVA)
+hips = s.box(341, 718, M(341), 802, -96, 96, DARK)
+hips.f(B((462, 710), (480, 750), 11), LAVA).f(B((586, 715), (560, 758), 11), LAVA)
 
 # arms: rocky forearms with a dark band, big shoulder blocks
 for f in BOTH:

@@ -28,6 +28,8 @@ for f in BOTH:
 s.box(388, 810, M(388), 1030, -100, 100, BLUE)
 clock(578, 922, 94, 98)
 s.box(571, 858, 585, 936, 112, 120, INK)
+for x, y in ((500, 922), (656, 922), (578, 990)):
+    s.box(x - 8, y - 8, x + 8, y + 8, 112, 118, INK)
 s.box(383, 1014, M(383), 1070, -104, 104, BROWN)
 
 # arms: blue sleeves, gold cuffs, frayed epaulettes

@@ -33,7 +33,7 @@ for f in BOTH:
     s.box(f(156), 440, f(350), 492, -86, 86, MOSS)
 
 # glowing rune tablets floating beside the arms
-for cx, a in ((292, -8), (M(292) + 10, 8)):
+for cx, a in ((288, -8), (890, 8)):
     s.prism(RR(cx, 690, 88, 132, a), 104, 124, '#7EF4EC').f(RR(cx, 690, 16, 68, a), '#1E4A48')
 
 # head: face, top block, moss cap, band with a rune gem, glowing eyes, mouth

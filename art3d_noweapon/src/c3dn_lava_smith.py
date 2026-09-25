@@ -27,7 +27,7 @@ for f in BOTH:
     s.box(f(186), 752, f(342), 862, -76, 78, '#8A2A08')
     s.box(f(172), 528, f(340), 604, -84, 84, DARK)
     s.box(f(212), 512, f(268), 536, -30, 30, OR)
-s.box(730, 650, 752, 722, 72, 76, OR)
+s.prism(B((721, 645), (747, 718), 9), 72, 75, OR, line=False)
 
 # head: rocky face with lava cracks, band, glowing eyes
 head = s.box(331, 254, M(331), 604, -110, 110, ROCK)

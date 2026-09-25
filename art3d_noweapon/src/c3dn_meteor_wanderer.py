@@ -32,6 +32,9 @@ for f in BOTH:
     s.box(f(220), 480, f(340), 626, -60, 60, '#2A2F5A')
     s.box(f(228), 620, f(332), 730, -56, 58, '#5A5A8A')
 
+# a floating rock by the right foot
+rock(630, 760, 70, 25, z=60, glow=(8, 4, 22, 14))
+
 # head: knob, hood, orange frame, face, goggles, scar, mouth
 s.box(414, 180, M(414), 208, -40, 40, '#3A3A6A')
 s.box(304, 198, M(304), 242, -92, 92, '#28305A')

@@ -14,11 +14,11 @@ s.box(382, 88, M(382), 128, -70, 70, '#FFF200')
 # feet, lower robe, blue hem with a gold edge
 for f in BOTH:
     s.box(f(356), 978, f(505), 1016, -60, 84, '#4A8A7A')
-s.box(342, 852, M(342), 960, -90, 90, ROBE)
+s.box(342, 852, M(342), 960, -90, 90, ROBE).f(R(402, 852, 458, 876), BLUE).f(R(564, 852, 620, 876), BLUE)
 s.box(336, 948, M(336), 986, -94, 94, BLUE).f(R(336, 978, M(336), 986), '#F8C800')
 
 # robe with blue straps, gold belt with a gem
-s.box(352, 590, M(352), 860, -88, 88, ROBE).f(R(405, 640, 462, 860), BLUE).f(R(M(462), 640, M(405), 860), BLUE)
+s.box(352, 590, M(352), 860, -88, 88, ROBE).f(R(402, 740, 458, 860), BLUE).f(R(564, 740, 620, 860), BLUE)
 s.box(344, 806, M(344), 856, -92, 92, GOLD)
 gem(s, 522, 831, 32, 90, 104, '#FFE800')
 

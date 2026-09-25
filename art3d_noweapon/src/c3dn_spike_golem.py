@@ -31,7 +31,8 @@ for f, a in ((lambda x: x, -8), (M, 8)):
         s.prism(P((x0, 956), (x0 + 38, 872), (x0 + 76, 956)), 104, 132, '#A88088')
     s.cube(f(288), 628, 0, 244, 204, 230, PALE, rz=a)
     s.box(f(218), 468, f(358), 548, -60, 60, '#9A8488')
-s.box(215, 845, 245, 902, 106, 108, CRACK, line=False)
+s.prism(B((216, 906), (252, 846), 12), 106, 110, CRACK, line=False)
+s.prism(B((1024, 962), (1076, 878), 12), 106, 110, CRACK, line=False)
 
 # head: stone blocks on top, upper tier with specks, band, face, jaw
 s.box(458, 152, 545, 212, -60, 60, '#C0A8A8')

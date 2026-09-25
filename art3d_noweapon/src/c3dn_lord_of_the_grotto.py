@@ -8,7 +8,7 @@ BOTH = (lambda x: x, M)
 GOLD, RED, SKIN, BEARD = '#E8B800', '#D00818', '#FCE0CC', '#C06008'
 
 # tall gold crown pillars behind the band
-for cx, top, w, z in ((415, 112, 58, -30), (M(415), 150, 50, -30), (452, 62, 60, -60), (M(452), 74, 60, -60), (552, 30, 70, -70)):
+for cx, top, w, z in ((415, 118, 60, -30), (604, 142, 32, -40), (455, 56, 62, -60), (662, 74, 58, -50), (551, 28, 76, -70)):
     s.box(cx - w / 2, top, cx + w / 2, 262, z - w / 2, z + w / 2, GOLD)
 
 # lower robe, gold hem
@@ -35,7 +35,7 @@ gem(s, 552, 292, 52, 120, 138, '#FF1030')
 # face
 for f in BOTH:
     head.f(P((f(420), 414), (f(512), 424), (f(512), 454), (f(420), 444)), '#8B3A10')
-for x in (435, M(495)):
+for x in (435, 603):
     head.f(R(x, 450, x + 60, 540), '#05051A').f(R(x + 8, 462, x + 30, 490), '#FFFFFF')
 
 # ginger beard with golden threads and a gold clasp

@@ -12,10 +12,10 @@ for cx, top, w, z in ((478, 165, 36, -30), (M(478), 165, 36, -30), (432, 105, 60
     crystal(s, cx, (top + 250) / 2, w, 250 - top, ICE, z=z, d=w * 0.9)
 
 # legs, snowy boots, soles
-for f in BOTH:
-    s.box(f(385), 1040, f(553), 1086, -76, 96, '#90A8B8')
-    s.box(f(390), 988, f(553), 1050, -74, 90, SNOW)
-    s.box(f(395), 898, f(553), 994, -70, 70, '#1040E0')
+for x0, x1 in ((392, 542), (560, 712)):
+    s.box(x0 - 6, 1040, x1 + 4, 1086, -76, 96, '#90A8B8')
+    s.box(x0 - 4, 988, x1 + 2, 1050, -74, 90, SNOW)
+    s.box(x0, 898, x1, 994, -70, 70, '#1040E0')
 
 # robe with a snowflake, gold belt with an ice gem
 t = s.box(387, 650, M(387), 912, -100, 100, BLUE)

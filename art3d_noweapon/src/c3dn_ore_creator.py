@@ -49,7 +49,7 @@ s.box(294, 270, M(294), 314, -122, 122, '#7A3410').f(P((478, 280), (498, 280), (
 s.box(287, 310, M(287), 336, -118, 118, YEL)
 for f in BOTH:
     head.f(P((f(365), 402), (f(452), 414), (f(452), 440), (f(365), 428)), '#5A1A0A')
-for x in (380, M(435)):
+for x in (380, 556):
     head.f(R(x, 448, x + 55, 500), '#FFFF50').f(R(x + 6, 454, x + 30, 466), '#FFFFC4')
 
 # beard: wide upper block, mustache, narrow lower block
