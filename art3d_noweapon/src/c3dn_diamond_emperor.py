@@ -35,13 +35,12 @@ for f in BOTH:
     s.box(f(105), 438, f(244), 492, -66, 66, '#E0E4EC')
 s.box(M(242), 580, M(118), 620, -62, 62, '#E0B000')
 
-# head: face, crown band, white brows, blue eyes, white beard
-head = s.box(240, 222, M(240), 472, -90, 90, SKIN)
-s.box(226, 174, M(226), 230, -96, 96, GOLD)
-for f in BOTH:
-    head.f(P((f(282), 288), (f(346), 294), (f(346), 308), (f(282), 302)), '#F4F0F0', line=True)
-for x, hx in ((292, 297), (M(342), M(336))):
-    head.f(R(x, 305, x + 50, 368), '#0A2A9A').f(R(hx, 314, hx + 14, 332), '#FFFFFF')
-s.box(270, 380, M(270), 472, 88, 112, '#F8F6F4')
+# head: face, crown band, white brows, blue eyes (set wide apart), two-tier white beard
+head = s.box(242, 222, 492, 472, -90, 90, SKIN)
+s.box(232, 174, 508, 230, -96, 96, GOLD)
+head.f(R(284, 288, 340, 304), '#F4F0F0', line=True).f(R(392, 288, 452, 304), '#F4F0F0', line=True)
+for x, hx in ((292, 298), (400, 406)):
+    head.f(R(x, 306, x + 40, 366), '#0A2A9A').f(R(hx, 316, hx + 13, 332), '#FFFFFF')
+s.prism(P((300, 382), (432, 382), (432, 398), (458, 398), (458, 474), (274, 474), (274, 398), (300, 398)), 88, 104, '#F8F6F4')
 
 render(s, sys.argv[1])
