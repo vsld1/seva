@@ -12,7 +12,8 @@ SRC = {'cave_chief': 2, 'amber_guard': 5, 'stone_king': 6, 'bone_shaman': 7, 'di
        'lava_smith': 34, 'ruby_splitter': 35, 'sapphire_seer': 36, 'emerald_garden_mage': 37, 'spike_golem': 38,
        'topaz_lightkeeper': 39, 'coral_diver': 41, 'shadow_ninja': 42, 'silver_miner': 43, 'green_sage': 44,
        'amethyst_vein_guard': 45, 'professor': 46, 'pipe_farmer': 47, 'pastel_princess': 48, 'rusty_mechanic': 49,
-       'slate_scout': 50, 'builder': 51}
+       'slate_scout': 50, 'builder': 51,
+       'quartz_gnome': 59, 'bronze_digger': 60, 'miner_mouse': 61, 'flint_sparker': 62, 'snorkel_kid': 63}
 
 
 def sheet(names, out, render_dir, h=440):
