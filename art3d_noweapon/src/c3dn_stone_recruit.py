@@ -35,7 +35,8 @@ s.box(294, 679, 357, 739, 104, 124, '#A0501C')
 for f in BOTH:
     x0, x1 = sorted((f(159), f(283)))
     s.box(x0, 450, x1, 724, -64, 64, STONE).f(R(x0, 634, x1, 694), '#F0E0B8')
-s.cube(650, 500, 0, 140, 92, 150, '#B8B6CA', rz=10)
+s.box(575, 452, 728, 542, -76, 76, '#B8B6CA', rz=10, pivot=(650, 500, 0))
+s.box(575, 540, 728, 556, -80, 80, '#6A6A88', rz=10, pivot=(650, 500, 0))
 
 # head, helmet nose guard, angry brows, eyes, mouth, worn patches
 head = s.box(289, 275, M(289), 495, -106, 106, STONE).f(R(412, 278, M(412), 356), '#7A7A92')
